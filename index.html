@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papier Kamień Nożyce</title>
+    <style>
+        section {
+            text-align: center;
+            margin: 50px auto 0;
+            /* padding: 100px; */
+        }
+        .left_sec {
+            float: left;
+        }
+        .right_sec {
+            float: right;
+        }
+        div {
+            padding: 50px 100px;
+            margin: 10px;
+        }
+        img {
+            display: inline-block;
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            border: 3px dotted black;
+            cursor: pointer;
+        }
+        button {
+            position: relative;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 50px;
+            border: 3px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Wybierz dłoń:</h1>
+        <img data-option="papier" src="" alt="papier" title="papier">
+        <img data-option="kamień" src="" alt="kamień" title="kamień">
+        <img data-option="nożyce" src="" alt="nożyce" title="nożyce">
+    </section>
+    <button>LET'S PLAY!!!</button>
+    <div class="left_sec">
+        <p class="youHand">Twoja ręka: <span></span></p>
+        <p class="aiHand">AI ręka: <span></span></p>
+        <p>REZULTAT:</p>
+        <h1 class="result"></h1>
+    </div>
+    <div class="right_sec">
+        <p class="numGames">Liczba gier: <span >0</span></p>
+        <p class="win">Wygrane: <span >0</span></p>
+        <p class="losses">Przegrane: <span >0</span></p>
+        <p class="draw">Remisy: <span >0</span></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
